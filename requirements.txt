@@ -2,23 +2,23 @@
 # Dependências para Busca Autêntica em APIs Científicas
 
 # Essencial
-streamlit==1.28.1
-groq==0.4.2
-requests==2.31.0
+streamlit
+groq
+requests
 
 # APIs e Web Scraping
-beautifulsoup4==4.12.2
-lxml==4.9.3
+beautifulsoup4
+lxml
 
 # Processamento de Dados
-pandas==2.1.3
-numpy==1.24.3
+pandas
+numpy
 
-# Multimodal (Opcional)
-SpeechRecognition==3.10.1
-Pillow==10.1.0
-pytesseract==0.3.10
-pdfplumber==0.10.3
+# Multimodal (Opcional
+SpeechRecognition
+Pillow
+pytesseract
+pdfplumber
 
 # Utilitários
-python-dotenv==1.0.0
+python-dotenv
