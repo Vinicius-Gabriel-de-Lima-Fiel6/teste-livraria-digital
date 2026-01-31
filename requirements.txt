@@ -1,6 +1,5 @@
-scipy
 streamlit
-numpy
 pandas
-plotly
-networkx
+numpy
+groq
+python-dotenv
