@@ -462,3 +462,18 @@ def show_tabelas():
 # ==============================================================================
 # FIM DO MÓDULO
 # ==============================================================================
+
+# --- FINAL DO ARQUIVO ---
+
+# 1. Garante que a função seja executada quando o Streamlit abrir o arquivo
+if __name__ == "__main__":
+    # Configuração da página (deve ser a primeira coisa do Streamlit)
+    st.set_page_config(
+        page_title="Biblioteca Científica 2026",
+        page_icon="🧪",
+        layout="wide",
+        initial_sidebar_state="expanded"
+    )
+    
+    # 2. Chama a função que criamos anteriormente
+    show_tabelas()
