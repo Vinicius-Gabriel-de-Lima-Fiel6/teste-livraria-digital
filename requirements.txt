@@ -1,6 +1,26 @@
-streamlit
-pandas
-numpy
-groq
-python-dotenv
-openpyxl
+# BIBLIOTECA CIENTÍFICA DIGITAL 2026 - VERSÃO AVANÇADA
+# Dependências para IA, Busca na Internet e Processamento Multimodal
+
+# Core
+streamlit==1.28.1
+pandas==2.1.3
+numpy==1.24.3
+
+# IA - Groq (ESSENCIAL)
+groq==0.4.2
+
+# Busca na Internet
+requests==2.31.0
+beautifulsoup4==4.12.2
+
+# Processamento Multimodal
+SpeechRecognition==3.10.1
+Pillow==10.1.0
+pytesseract==0.3.10
+pdfplumber==0.10.3
+
+# Síntese de Voz
+gtts==2.4.0
+
+# Utilitários
+python-dotenv==1.0.0
