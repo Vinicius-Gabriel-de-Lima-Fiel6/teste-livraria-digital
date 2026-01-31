@@ -14,42 +14,7 @@ import random
 # ==============================================================================
 
 def _inject_custom_css():
-    st.markdown("""
-    <style>
-        .science-card {
-            background-color: #0e1117;
-            border: 1px solid #30333F;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 15px;
-            transition: transform 0.2s;
-        }
-        .science-card:hover {
-            border-color: #00d4b3;
-            transform: scale(1.01);
-        }
-        .metric-value {
-            font-family: 'Courier New', monospace;
-            font-weight: bold;
-            color: #00d4b3;
-        }
-        .citation-box {
-            background-color: #1c202a;
-            border-left: 4px solid #ff4b4b;
-            padding: 10px;
-            font-size: 0.9em;
-            margin-top: 10px;
-        }
-        .verified-badge {
-            background-color: #00FF00;
-            color: black;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.7em;
-            font-weight: bold;
-        }
-    </style>
-    """, unsafe_allow_html=True)
+    
 
 # ==============================================================================
 # MÓDULO: MOTOR DE DADOS CIENTÍFICOS (DATA ENGINE)
