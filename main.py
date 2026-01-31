@@ -217,7 +217,7 @@ class ScientificTablesLibrary:
         data = {
             'Substância': ['Cianeto de Potássio', 'Arsênio Trióxido', 'Mercúrio Metálico',
                           'Chumbo Acetato', 'Cafeína', 'Etanol', 'Açúcar', 'Água'],
-            'LD50 Oral (mg/kg)': [5, 20, 40, 412, 192, 10000, 29600, '>90000'],
+            'LD50 Oral (mg/kg)': [5, 20, 40, 412, 192, 10000, 29600, 90000],
             'Espécie Teste': ['Rato', 'Rato', 'Rato', 'Rato', 'Rato', 'Rato', 'Rato', 'Rato'],
             'Classificação': ['Agudo Tox 1', 'Agudo Tox 2', 'Agudo Tox 2', 'Agudo Tox 4',
                             'Agudo Tox 3', 'Agudo Tox 3', 'Seguro', 'Seguro'],
@@ -772,7 +772,7 @@ def main():
             )
         
         with col2:
-            process_btn = st.button("🚀 Processar Query", use_container_width=True)
+            process_btn = st.button("🚀 Processar Query", width='stretch')
         
         if process_btn and query:
             with st.spinner("⏳ Processando com agentes..."):
@@ -840,7 +840,7 @@ def main():
                 df_filtered = df
             
             # Exibe tabela
-            st.dataframe(df_filtered, use_container_width=True, height=400)
+            st.dataframe(df_filtered, width='stretch', height=400)
             
             # Exportação
             col1, col2, col3 = st.columns(3)
@@ -865,7 +865,7 @@ def main():
         
         search_type = st.radio("Tipo de Busca:", ["Textual", "Conceitual"])
         
-        if st.button("🔎 Buscar", use_container_width=True):
+        if st.button("🔎 Buscar", width='stretch'):
             if search_query:
                 if search_type == "Textual":
                     results = st.session_state.search_engine.textual_search(search_query)
